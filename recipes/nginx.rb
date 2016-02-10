@@ -32,7 +32,7 @@ template '/etc/nginx/sites-available/apt-mirrors' do
   group   'root'
   variables(
     :port => node['apt-mirror']['nginx']['port'],
-    :server_name => node['fqdn'],
+    :server_name => node['apt-mirror']['invision_url'],
     :mirror_path => File.join(node['apt-mirror']['base_path'], "/mirror/"),
     :repository_information => repository_information
   )
