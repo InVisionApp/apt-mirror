@@ -1,11 +1,18 @@
-{
-  "sha": "72f348f5a2c446733a2da44b08113800b63b54aa",
-  "sources": {
-    "apt-mirror": {
-      "path": "."
-    },
-    "apt": {
-      "locked_version": "2.1.1"
-    }
-  }
-}
+DEPENDENCIES
+  apt
+  apt-mirror
+    path: .
+    metadata: true
+  mkfs
+    git: git@github.com:InVisionApp/mkfs-cookbook.git
+    revision: 3b8f1fbe8b43f7db51ad78a748e6fcbfb07a8b2d
+
+GRAPH
+  apt (2.9.2)
+  apt-mirror (0.1.3)
+    aws (= 2.6.5)
+    lvm (>= 0.0.0)
+    mkfs (>= 0.0.0)
+  aws (2.6.5)
+  lvm (1.5.1)
+  mkfs (0.1.2)

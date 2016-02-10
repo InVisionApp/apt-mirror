@@ -3,6 +3,10 @@ apt-mirror CHANGELOG
 
 This file is used to list changes made in each version of the apt-mirror cookbook.
 
+0.1.3
+-----
+- [Cris Gallardo] - Added Ubuntu 14.04 support and modified the nginx conf
+
 0.1.2
 -----
 - [Aaron Baer] - Add support for nginx front end
