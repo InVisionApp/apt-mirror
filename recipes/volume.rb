@@ -3,6 +3,7 @@ directory '/var/downloads/updates' do
 end
 
 include_recipe 'aws'
+include_recipe 'mkfs'
 
 aws_ebs_volume 'downloads_volume' do
     size 300
